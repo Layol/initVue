@@ -14,7 +14,13 @@ module.exports={
         hot:true,
         port:3000,
         // contentBase:'src'
-        open:true
+        open:true,
+        host:'localhost',
+        proxy:{
+            '/api':{
+                
+            }
+        }
     },
     plugins:[
         new webpack.HotModuleReplacementPlugin(),
